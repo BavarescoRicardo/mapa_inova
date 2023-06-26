@@ -1,4 +1,5 @@
 <?php
+
     if (count($_POST) > 0){
        $nome = $_POST['nome'];
        $email = $_POST['email'];
@@ -7,8 +8,14 @@
 
        // verificando campos obrigatórios
        if(empty($nome) || empty($email)){
-            echo "Campos Obrigatórios nome e email";
-            
+            echo "Campos Obrigatórios nome e email";            
+       } else {
+            include('conexao.php');
+
+            $sql = "INSERT INTO usuario (nome, email, nascimento, contato) 
+            VALUES('$nome', '$email', '$nascimento', '$contato')";
+
+            $mysqli->query($sql) or die($mysqli->error);
        }
     }
 ?>
