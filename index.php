@@ -1,3 +1,10 @@
+<?php
+    include('conexao.php');
+    echo "<br>ola! <br>";
+
+
+
+?>
 <div class="dados">
 
     <p>
