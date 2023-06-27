@@ -6,7 +6,7 @@
 
 ?>
 <div class="dados">
-
+    <a href="/mapa_inova/usuarios.php">lista</a>
     <p>
         <?php
             $usuario = 'Ricardo';

@@ -28,7 +28,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/usuarios.php">Voltar a lista</a>
+    <a href="/mapa_inova/usuarios.php">Voltar a lista</a>
     <form action="" method="POST">
         <p>
             <label for="nome">Nome:</label>
