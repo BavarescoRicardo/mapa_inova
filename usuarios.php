@@ -42,7 +42,7 @@
                 <td><?php echo $usuario['contato']; ?></td>
                 <td> 
                     <a href="editar_user.php?id=<?php echo $usuario['idusuario']; ?>">Editar</a>
-                    <a href="deletar_user.php?editar.php?id=<?php echo $usuario['idusuario']; ?>">Remover</a>
+                    <a href="deletar_user.php?id=<?php echo $usuario['idusuario']; ?>">Remover</a>
                 </td>
             </tr>
             <?php } 
