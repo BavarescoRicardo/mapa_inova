@@ -31,7 +31,7 @@
             while ($usuario = $usuarios_query->fetch_assoc()) {
                 $nascimento = "Não informado";
                 if (!empty($usuario['nascimento'])) {
-                    $nascimento = implode('/', (array_reverse(explode('-', $usuario['nascimento']))));
+                    $nascimento = formatar_data($usuario['nascimento']);
                 }
         ?>            
             <tr>
@@ -41,8 +41,8 @@
                 <td><?php echo $nascimento; ?></td>
                 <td><?php echo $usuario['contato']; ?></td>
                 <td> 
-                    <a href="editar.php?<?php echo $usuario['idusuario']; ?>">Editar</a>
-                    <a href="deletar.php?editar.php?<?php echo $usuario['idusuario']; ?>">Remover</a>
+                    <a href="editar_user.php?id=<?php echo $usuario['idusuario']; ?>">Editar</a>
+                    <a href="deletar_user.php?editar.php?id=<?php echo $usuario['idusuario']; ?>">Remover</a>
                 </td>
             </tr>
             <?php } 
